@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.codepath.apps.restclienttemplate"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="18" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-feature android:name="android.hardware.camera" />
+
+    <application
+        android:name="com.codepath.apps.restclient.RestClientApp"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher2"
+        android:label="@string/app_name"
+        android:theme="@style/MyTheme" >
+        <meta-data
+            android:name="AA_DB_NAME"
+            android:value="RestClient.db" />
+        <meta-data
+            android:name="AA_DB_VERSION"
+            android:value="1" />
+
+        <activity
+            android:name="com.codepath.apps.activities.LoginActivity"
+            android:label="@string/app_name"
+            android:noHistory="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="codepathtweets"
+                    android:scheme="oauth" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.codepath.apps.activities.HomeActivity"
+            android:label="" >
+        </activity>
+        <activity
+            android:name="com.codepath.apps.activities.TweetActivity"
+            android:label="" 
+            android:windowSoftInputMode="stateVisible|adjustResize">
+        </activity>
+        <activity
+            android:name="com.codepath.apps.activities.UserDetailActivity"
+            android:label="@string/title_activity_user_detail" >
+        </activity>
+        <activity
+            android:name="com.codepath.apps.activities.TweetDetailActivity"
+            android:label="@string/title_activity_tweet_detail" >
+        </activity>
+    </application>
+
+</manifest>

@@ -1,5 +1,7 @@
 package com.codepath.apps.activities;
 
+import java.io.ByteArrayInputStream;
+import java.io.ByteArrayOutputStream;
 import java.nio.ByteBuffer;
 
 import org.json.JSONObject;
@@ -15,6 +17,7 @@ import android.os.Bundle;
 import android.provider.MediaStore;
 import android.text.Editable;
 import android.text.TextWatcher;
+import android.util.Base64;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -256,7 +259,7 @@ public class TweetActivity extends Activity {
 		if(isReplyAction){
 			inReplyTo = String.valueOf(getIntent().getLongExtra("id", 0));
 		}
-		client.postTweet(status, inReplyTo, image,new JsonHttpResponseHandler() { 
+		client.postTweet(status, inReplyTo, getBAISForPhoto(),new JsonHttpResponseHandler() { 
 		@Override
 	            public void onSuccess(JSONObject body) {
 				finishActivity();
@@ -268,6 +271,20 @@ public class TweetActivity extends Activity {
 		   Toast.makeText(context, "Excepton : "+e.getLocalizedMessage(), Toast.LENGTH_SHORT).show();
 		  }
 		});	
+	}
+	
+	private ByteArrayInputStream getBAISForPhoto(){
+		if(photo == null){
+			return null;
+		}
+		ByteArrayOutputStream baos = new ByteArrayOutputStream();
+        photo.compress(Bitmap.CompressFormat.PNG, 100, baos);
+        byte[] imageBytes = baos.toByteArray();
+        String encodedImage = Base64.encodeToString(imageBytes, Base64.DEFAULT);
+        // then flip the stream
+        byte[] myTwitterUploadBytes = baos.toByteArray();
+        ByteArrayInputStream bis = new ByteArrayInputStream(myTwitterUploadBytes);
+        return bis;
 	}
 	
 	private void finishActivity(){

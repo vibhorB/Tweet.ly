@@ -1,11 +1,11 @@
 package com.codepath.apps.restclient;
 
+import java.io.ByteArrayInputStream;
+
 import org.scribe.builder.api.Api;
 import org.scribe.builder.api.TwitterApi;
 
 import android.content.Context;
-import android.net.Uri;
-import android.util.Base64;
 
 import com.codepath.oauth.OAuthBaseClient;
 import com.loopj.android.http.AsyncHttpResponseHandler;
@@ -53,17 +53,17 @@ public class TwitterClient extends OAuthBaseClient {
   	  getClient().get(apiUrl, params, handler);
   	}
     
-    public void postTweet(String content, String inReplyTo, byte[] image,AsyncHttpResponseHandler handler) {
+    public void postTweet(String content, String inReplyTo, ByteArrayInputStream image,AsyncHttpResponseHandler handler) {
   	  String apiUrl;
   	  RequestParams params = new RequestParams();
-//  	  if(image != null && image.length != 0){
-//  		  apiUrl = getApiUrl("statuses/update_with_media.json");
-//  		  String imageData = Base64.encodeToString(image, 0);
-//  		  params.put("media[]", imageData);
-//  	  }else{
-//  		apiUrl = getApiUrl("statuses/update.json");
-//  	  }
-  	apiUrl = getApiUrl("statuses/update.json");
+  	  if(image != null){
+  		  apiUrl = getApiUrl("statuses/update_with_media.json");
+  		  //String imageData = Base64.encodeToString(image, 0);
+  		  params.put("media[]", image);
+  	  }else{
+  		apiUrl = getApiUrl("statuses/update.json");
+  	  }
+  	//apiUrl = getApiUrl("statuses/update.json");
   	  params.put("status", content);
   	  if(inReplyTo != null){
   		params.put("in_reply_to_status_id", content);
