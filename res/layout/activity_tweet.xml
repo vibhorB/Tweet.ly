@@ -1,0 +1,142 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".TweetActivity" >
+    
+    <ImageView
+        android:id="@+id/ivUserImg"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:scaleType="fitXY"
+        android:adjustViewBounds="true"
+        />
+    
+  <!--   <TextView
+  android:src="@drawable/large_movie_poster" 
+        android:id="@+id/tvName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/ivUserImg"
+        android:layout_marginLeft="17dp"
+        android:layout_toRightOf="@+id/ivUserImg"
+        android:text="Tia Gao"
+        android:textSize="20sp" /> -->
+    
+    <!-- <View
+	    android:id="@+id/horz"
+    	android:layout_width="match_parent"
+    	android:layout_marginTop="20dp"
+		android:layout_height="2dp"
+		android:background="#ff000000" 
+		android:layout_below="@+id/ivUserImg"/> 
+		
+		 android:layout_alignLeft="@+id/horz"
+        android:layout_below="@+id/horz"-->
+
+    <EditText
+        android:id="@+id/etStatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       android:layout_alignLeft="@+id/ivUserImg"
+        android:layout_below="@+id/ivUserImg"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:inputType="textMultiLine"
+        android:hint="@string/composeHint" >
+
+        <requestFocus />
+    </EditText>
+
+ <!--    <ImageButton
+        android:id="@+id/ibPost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/etStatus"
+        android:layout_alignParentRight="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/arrow_32" /> -->
+
+    <TextView
+        android:id="@+id/tvChars"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/etStatus"
+        android:layout_below="@+id/etStatus"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/tvScreenName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/ivUserImg"
+        android:layout_toRightOf="@+id/ivUserImg"
+        android:layout_below="@+id/tvTwtName"
+        android:paddingLeft="5dp"
+        android:textSize="12sp"/>
+
+    <TextView
+        android:id="@+id/tvTwtName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tvScreenName"
+        android:layout_alignTop="@+id/ivUserImg"
+        android:paddingLeft="5dp"
+        android:textSize="16sp"/>
+    
+    <RelativeLayout 
+        android:id="@+id/rlActions"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/WhiteSmoke">
+
+        <ImageButton
+            android:id="@+id/ibCamera"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:src="@drawable/ic_camera" />
+
+        <ImageButton
+            android:id="@+id/ibGallery"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="32dp"
+            android:background="@null"
+            android:src="@drawable/ic_gallery" />
+
+        <ImageButton
+            android:id="@+id/ibLocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="32dp"
+            android:background="@null"
+            android:src="@drawable/ic_location" />
+        
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/ivTwtImage"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:maxWidth="100dp"
+        android:layout_alignLeft="@+id/tvChars"
+        android:layout_below="@+id/tvChars"
+        android:layout_marginTop="20dp"
+        android:scaleType="fitXY"
+        />
+
+</RelativeLayout>

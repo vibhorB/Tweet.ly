@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Tweet.ly</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_photos">Flickr Photos</string>
+    <string name="login_label">Log in With Twitter</string>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="title_activity_tweet">TweetActivity</string>
+    <string name="tweet">Tweet</string>
+    <string name="perc">93%</string>
+    <string name="title_activity_user_detail">Profile</string>
+    <string name="title_activity_tweet_detail">Tweet</string>
+    <string name="retweets">RETWEETS</string>
+    <string name="fav">FAVORITES</string>
+    <string name="twt">TWEET</string>
+    <string name="compose">Compose</string>
+    <string name="chars">140</string>
+    <string name="composeHint">What\'s happening?</string>
+
+</resources>
