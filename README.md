@@ -46,20 +46,22 @@ Twitter Client
 
 **Screenshots -**
 
-![Screenshot](https://raw.githubusercontent.com/vibhorB/Tweet.ly/master/screenshots/2014-04-02%2002.59.31.png)
-![Screenshot](https://raw.githubusercontent.com/vibhorB/Tweet.ly/master/screenshots/2014-04-02%2002.59.49.png)
-![Screenshot](https://raw.githubusercontent.com/vibhorB/Tweet.ly/master/screenshots/2014-04-02%2003.00.41.png)
-![Screenshot](https://raw.githubusercontent.com/vibhorB/Tweet.ly/master/screenshots/2014-04-02%2003.01.05.png)
-![Screenshot](https://raw.githubusercontent.com/vibhorB/Tweet.ly/master/screenshots/2014-04-02%2003.01.41.png)
-![Screenshot](https://raw.githubusercontent.com/vibhorB/Tweet.ly/master/screenshots/2014-04-02%2003.02.12.png)
-![Screenshot](https://raw.githubusercontent.com/vibhorB/Tweet.ly/master/screenshots/2014-04-02%2003.02.54.png)
-![Screenshot](https://raw.githubusercontent.com/vibhorB/Tweet.ly/master/screenshots/2014-04-02%2003.03.07.png)
-![Screenshot](https://raw.githubusercontent.com/vibhorB/Tweet.ly/master/screenshots/2014-04-02%2003.09.35.png)
-![Screenshot](https://raw.githubusercontent.com/vibhorB/Tweet.ly/master/screenshots/2014-04-02%2003.09.47.png)
-![Screenshot](https://raw.githubusercontent.com/vibhorB/Tweet.ly/master/screenshots/2014-04-02%2003.10.29.png)
-![Screenshot](https://raw.githubusercontent.com/vibhorB/Tweet.ly/master/screenshots/2014-04-02%2003.10.41.png)
-![Screenshot](
-![Screenshot](
-![Screenshot](
-![Screenshot](
-![Screenshot](
+
+![Screenshot](https://raw.githubusercontent.com/vibhorB/Tweet.ly/master/screenshots-2/2014-04-02%2002.59.31.png)
+![Screenshot](https://raw.githubusercontent.com/vibhorB/Tweet.ly/master/screenshots-2/2014-04-02%2002.59.49.png)
+![Screenshot](https://raw.githubusercontent.com/vibhorB/Tweet.ly/master/screenshots-2/2014-04-02%2003.00.41.png)
+![Screenshot](https://raw.githubusercontent.com/vibhorB/Tweet.ly/master/screenshots-2/2014-04-02%2003.01.05.png)
+![Screenshot](https://raw.githubusercontent.com/vibhorB/Tweet.ly/master/screenshots-2/2014-04-02%2003.01.41.png)
+![Screenshot](https://raw.githubusercontent.com/vibhorB/Tweet.ly/master/screenshots-2/2014-04-02%2003.02.12.png)
+![Screenshot](https://raw.githubusercontent.com/vibhorB/Tweet.ly/master/screenshots-2/2014-04-02%2003.02.54.png)
+![Screenshot](https://raw.githubusercontent.com/vibhorB/Tweet.ly/master/screenshots-2/2014-04-02%2003.03.07.png)
+![Screenshot](https://raw.githubusercontent.com/vibhorB/Tweet.ly/master/screenshots-2/2014-04-02%2003.09.47.png)
+![Screenshot](https://raw.githubusercontent.com/vibhorB/Tweet.ly/master/screenshots-2/2014-04-02%2003.10.29.png)
+![Screenshot](https://raw.githubusercontent.com/vibhorB/Tweet.ly/master/screenshots-2/2014-04-02%2003.10.41.png)
+![Screenshot](https://raw.githubusercontent.com/vibhorB/Tweet.ly/master/screenshots-2/2014-04-02%2003.10.49.png)
+![Screenshot](https://raw.githubusercontent.com/vibhorB/Tweet.ly/master/screenshots-2/2014-04-02%2003.10.53.png)
+![Screenshot](https://raw.githubusercontent.com/vibhorB/Tweet.ly/master/screenshots-2/2014-04-02%2003.11.03.png)
+![Screenshot](https://raw.githubusercontent.com/vibhorB/Tweet.ly/master/screenshots-2/2014-04-02%2003.11.32.png)
+![Screenshot](https://raw.githubusercontent.com/vibhorB/Tweet.ly/master/screenshots-2/2014-04-02%2003.11.54.png)
+![Screenshot](https://raw.githubusercontent.com/vibhorB/Tweet.ly/master/screenshots-2/2014-04-02%2003.12.15.png)
+![Screenshot](https://raw.githubusercontent.com/vibhorB/Tweet.ly/master/screenshots-2/2014-04-02%2003.12.36.png)
