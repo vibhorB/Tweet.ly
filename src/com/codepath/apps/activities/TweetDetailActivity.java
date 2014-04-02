@@ -121,6 +121,25 @@ public class TweetDetailActivity extends Activity {
 			}
 		});
 		
+		ibTwtDetShare.setOnClickListener(new OnClickListener() {
+			
+			@Override
+			public void onClick(View v) {
+				startShareIntent();
+			}
+		});
+		
+	}
+
+	protected void startShareIntent() {
+		String name=tweet.getHandle().substring(1);
+		String twtUrl = "https://twitter.com/"+name+"/status/"+tweet.getTweetId();
+		String str = "Check out " + tweet.getHandle()+"'s Tweet: "+twtUrl;
+		Intent shareIntent = new Intent();
+	    shareIntent.setAction(Intent.ACTION_SEND);
+	    shareIntent.putExtra(Intent.EXTRA_TEXT, str);
+	    shareIntent.setType("text/plain");
+	    startActivity(Intent.createChooser(shareIntent, "Share Tweet"));		
 	}
 
 	protected void confirmRetweet() {
